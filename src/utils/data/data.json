@@ -1,32 +1,44 @@
 [
     {
-        "text":"Ceci est un test...",
-        "name":"Thomas",
-        "position":70
+    "name": "start",
+    "data":[
+            {
+            "text":"Il faut caresser un chocobo",
+            "name":"Thomas",
+            "players":[
+                {
+                "picture":"chobo.png",
+                "position": 5
+                },
+                {
+                "picture":"chobo.png",
+                "position": 50
+                }
+            ],
+            "action": [{
+                "redirect":"end",
+                "value":"Caresser le Chobo"
+            }]
+        }
+    ]
     },
     {
-        "text":"Comme tu vois, en cliquant sur le bouton...",
-        "name":"Thomas",
-        "position":50
-    },
-    {
-        "text":"Tu itères dans ton tableau...",
-        "name":"Thomas",
-        "position":50
-    },
-    {
-        "text":"Sympa non ? ...",
-        "name":"Thomas",
-        "position":100
-    },
-    {
-        "text":"☺",
-        "name":"Thomas",
-        "position":100
-    },
-    {
-        "text":"c'est cool oui",
-        "name":"George",
-        "position":100
+        "name": "end",
+        "data":[
+                {
+                "text":"Bravo, vous avez caressé le Chocobo (il semble être ravi)",
+                "name":"Thomas",
+                "players":[
+                    {
+                    "picture":"chobo.png",
+                    "position": 25
+                    }
+                ],
+                "action": [{
+                    "redirect":"home",
+                    "value":"Retourner au menu ?"
+                }]
+            }
+        ]
     }
 ]

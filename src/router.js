@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Start from './views/Start.vue';
+import End from './views/End.vue';
 
 Vue.use(Router)
 
@@ -13,6 +15,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/start',
+      name: 'start',
+      component: Start
+    },
+    {
+      path: '/end',
+      name: 'end',
+      component: End
     },
     
     //{
